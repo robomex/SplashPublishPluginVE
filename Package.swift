@@ -9,26 +9,26 @@
 import PackageDescription
 
 let package = Package(
-    name: "SplashPublishPlugin",
+    name: "SplashPublishPluginVE",
     platforms: [.macOS(.v12)],
     products: [
         .library(
-            name: "SplashPublishPlugin",
-            targets: ["SplashPublishPlugin"]
+            name: "SplashPublishPluginVE",
+            targets: ["SplashPublishPluginVE"]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/johnsundell/Publish.git", from: "0.9.0"),
+        .package(url: "https://github.com/robomex/PublishVE.git", from: "0.9.2"),
         .package(url: "https://github.com/johnsundell/Splash.git", from: "0.16.0")
     ],
     targets: [
         .target(
-            name: "SplashPublishPlugin",
-            dependencies: ["Splash", "Publish"]
+            name: "SplashPublishPluginVE",
+            dependencies: ["Splash", "PublishVE"]
         ),
         .testTarget(
             name: "SplashPublishPluginTests",
-            dependencies: ["SplashPublishPlugin"]
+            dependencies: ["SplashPublishPluginVE"]
         ),
     ]
 )

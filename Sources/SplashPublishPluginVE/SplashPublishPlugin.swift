@@ -4,7 +4,7 @@
 *  MIT license, see LICENSE file for details
 */
 
-import Publish
+import PublishVE
 import Splash
 import Ink
 

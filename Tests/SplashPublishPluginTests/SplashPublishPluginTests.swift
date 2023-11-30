@@ -5,7 +5,7 @@
 */
 
 import XCTest
-import SplashPublishPlugin
+import SplashPublishPluginVE
 import Ink
 
 final class SplashPublishPluginTests: XCTestCase {
