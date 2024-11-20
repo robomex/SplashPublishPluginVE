@@ -18,7 +18,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/robomex/PublishVE.git", from: "0.9.2"),
+        .package(url: "https://github.com/robomex/PublishVE.git", from: "0.9.3"),
         .package(url: "https://github.com/johnsundell/Splash.git", from: "0.16.0")
     ],
     targets: [
